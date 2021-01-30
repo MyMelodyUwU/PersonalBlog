@@ -6,9 +6,9 @@
 
 	<h2>Echo whoami: </h2>
 
-	<tr>Hello World! My hacker name is Melody, I am soon to be a security engineering student at USYD. I have written this website in pyBottle. I hope you enjoy my content and blogs. </tr>
+	<tr>Hello World! My hacker name is Melody, I am soon to be a security engineering student. I have written this website in pyBottle. I hope you enjoy my content and blogs. </tr>
 	<h2>What's this blog for?</h2>
-	<tr>I have decided to document the progressing journey of my time attending computer science. I have decided to share the hardships and the concerns within many students. </tr> 
+	<tr>I have decided to document the progressing journey of my time attending computer science. I have decided to share the hardships and the concerns within many students. In the beginning. </tr> 
 	
 
 </div>
