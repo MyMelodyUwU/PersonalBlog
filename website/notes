@@ -1,0 +1,13 @@
+In order to get working on debian,
+
+
+needed to install:
+
+make
+pip
+
+and also update
+
+apt update && apt upgrade -y
+
+make sure the server is set to deploy for a vps or dev for localhost

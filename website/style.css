@@ -1,0 +1,316 @@
+:root {
+    --color0: #E9BC84;
+    --color1: #EB6E6C;
+    --color2: #541E1B;
+    --color3: #c97644;
+    --color4: #DD364C;
+    --color5: #EE8070;
+    --color6: #EE8070;
+    --color7: #F9D6C0;
+    --color8: #F8D147;
+    --color9: #988836;
+    --color10: #E12E4B;
+    --color11: #F8DDA7;
+    --color12: #89C4A0;
+    --color13: #E8E9EE;
+    --color14: #EFD200;
+    --color15: #F57550;
+    --color256:#B0E785;
+    --color257: #000000;
+}
+/* 
+https://www.vyond.com/resources/20-color-palettes-for-your-brand-design/
+*/
+li img {
+    height: 1.25em;
+}
+h1 img {
+    height: 1em;
+}
+h2 img {
+    height: 1em;
+}
+h3 {
+    color: var(--color4);
+}
+h3 img {
+    height: 1em;
+}
+
+html {
+
+    /*
+    this really isnt best practice to style directly on <html>. this SHOULD be the style of the <body>
+    and whats on <body>, should rahter be on a <div>, or a <main>.
+
+    cool to see you use css variables, such a new thing. but still you hold on to a bit of boomer stuff in other parts. sneaky, and i respect it.
+    but, if you are going to use the same styling on more than one element, its best practice to use a class.
+    also i added a different background that dont burn out eyes, as I am sensitive to that. but it still looks good with the original. just comment it out and you will see.
+    the image here is also kinda huge as im using a 4k ultrawide and wanted it to look crisp on my end too, so load times might suffer for some there.
+    */
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+   background: linear-gradient(var(--color9), var(--color10), var(--color11), var(--color12));
+
+    /* background-image: url('https://i.imgur.com/VGomYTk.png'); */ 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    font-family: helvetica, sans-serif;
+}
+
+.mainpanel {
+    float: left;
+    max-width: 700px;
+    padding: 4px;
+    padding-right: 30px;
+}
+.mainpanel li {
+    line-height: 20px;
+}
+.sidepanel {
+    float: left;
+    max-width: 300px;
+    background-color: var(--color256);
+    padding: 2px;
+    border-radius: 0 10px 30px 0;
+}
+.sidepanel a {
+    color: var(--color3);
+}
+.sidepanel a:hover {
+    color: var(--color4);
+}
+.sidepanel ul li {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.sidepanel ul li ul li {
+    font-size: 18px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+body {
+  	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	
+    /*overflow cant be changed on body. since this type of styling is not for the body tag.*/
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--color2);
+	
+        padding: 15px;
+    /*
+    using different ways of shaddows to work in other browsers
+    as some might be using IE still for some reason
+    */
+    -webkit-box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.75);
+    color: var(--color13);
+    border-radius: 5px;
+    margin-top: 6em!important;
+    border: solid 1px;
+
+}
+
+
+a {
+    color: var(--color6);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color15);
+}
+
+a:hover img {
+    background: rgba(0, 0, 0, 0);
+    transition: .5s;
+    transform: scale(2, 2);
+}
+
+h1 {
+    color: var(--color6);
+    font-weight: Bold;
+    text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+    text-align: center;
+    margin-bottom: 1em
+}
+
+h2 {
+    color: var(--color4);
+    font-weight: normal;
+}
+.imgcont {
+    text-align: center;
+    position: relative;
+}
+.imgconttext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+.hiddiv {
+    display: none;
+}
+.qr:hover {
+    color: goldenrod;
+}
+.qr:hover .hiddiv {
+    display: block;
+    float: right;
+}
+.hiddiv img {
+    height: 200px;
+}
+
+#cat {
+    /*'float: center' does nothing btw. and cat should be an class, as its used so many times in the html*/
+    display: inline;
+}
+
+#links {
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    background-color: var(--color0);
+    padding: 5px;
+    border-radius: 10px;
+    /* margin-bottom: 6em */
+}
+
+#links img {
+    height: 1.25em;
+}
+
+/* Blog entry: */
+
+/*i added a more red-ish and darker background here to make it easier on the eyes to seperate the blocks. and also to go with the red border a little better, as the blue on the left ties in the same way with the body*/
+.entry {
+    padding: 10px;
+    border-radius: 0 5px 18px 0;
+    margin-bottom: 50px;
+    background: #1b1b1b;
+    border: 1px solid var(--color1);
+    border-left: 10px solid var(--color4);
+}
+.entry h2 {
+    margin: 5px auto 2px auto;
+}
+.entry small {
+    color: var(--color15);
+}
+footer strong {
+    font-weight: bold;
+}
+
+/*
+    i spaced out the dt parts here to make it easier for the eyes to navigate the paragraphs
+*/
+dt {
+    font-weight: bold;
+    margin-top: 2em;
+}
+dt img {
+    height: 1em;
+}
+
+/* Class name of video thumbnails in videos.html */
+.image {
+    width: 175px !important;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-table;
+    padding: 0px;
+}
+.image figcaption img {
+    height: 1em;
+}
+img.centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+figcaption {
+    padding: 0px;
+    max-width: 175px;
+}
+code {
+    color: var(--color2);
+    overflow-x: auto;
+}
+
+h3 {
+    margin-top: 3em;
+}
+
+/*align is not always supported anymore so i tend to just use 'auto' on left and right margin if you arent using flexbox or grid*/
+pre {
+    margin: auto;
+    margin-top: 3em;
+    background: var(--color257);
+    border: 1px solid var(--color8);
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    max-width: 900px;
+}
+
+.indexcolname {
+    max-width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.indexcoldesc {
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+}
+.indexcollastmod,
+.indexcolsize {
+    font-size: small;
+}
+#indexlist {
+    margin: 0px auto;
+}
+.centerpiece {
+    margin: auto;
+    margin: 0px auto;
+}
+
+/* Used in library.html */
+.booklist dt {
+    display: list-item;
+    list-style-type: square;
+    font-weight: normal;
+}
+.booklist dd {
+    display: none;
+}
+.booklist:hover dd {
+    display: block;
+}
+/* The mic class is for books featured in a NotRelated episode. */
+.mic:before {
+    content: "ðŸŽ™ï¸";
+}
+
+.mic {
+    list-style: none;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-left: 0;
+}
